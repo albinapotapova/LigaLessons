@@ -2,6 +2,7 @@ package lesson_2.homework;
 
 public class Tasks {
     public static void main(String[] args) {
+        task_2();
     }
 
     /**
@@ -11,13 +12,15 @@ public class Tasks {
     public static void task_1() {
         int a = 1;
         String b = "1";
-//        if (a == b) {
-//            System.out.println("success");
-//        }
 
-//        if (b.equals(a)) {
-//            System.out.println("success");
-//        }
+        if (Integer.parseInt(b) == a) {
+            System.out.println("success");
+        }
+
+        if (b.equals("" + a)) {
+            System.out.println("success");
+        }
+
     }
 
     /**
@@ -26,6 +29,17 @@ public class Tasks {
     public static void task_2() {
         String[] strs = new String[]{"one", "two", "three", "four"};
         for (String str : strs) {
+            switch (str.indexOf("o")) {
+                case 0:
+                    System.out.print(122);
+                    break;
+                case 1:
+                    System.out.print(3);
+                    break;
+                case 2:
+                    System.out.print(10);
+
+            }
             switch (str) {
                 case "one":
                     System.out.print(1);
@@ -35,13 +49,6 @@ public class Tasks {
                     System.out.print(3);
                 default:
                     System.out.print(5);
-            }
-
-            switch (str.indexOf("o")) {
-                case 0:
-                case 1:
-                case 2:
-                    System.out.print(10);
             }
         }
     }
