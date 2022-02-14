@@ -2,7 +2,6 @@ package lesson_2.homework;
 
 public class Tasks {
     public static void main(String[] args) {
-        task_3();
     }
 
     /**
@@ -65,11 +64,11 @@ public class Tasks {
      */
     public static void task_3() {
         for (int i = 0; i < 4; i++) {
-            if (compare(i, ???) ??? decreaseAndCompare(i, ???) ??? incrementAndCompare(i, ???)) {
+            if (compare(i, 1) & decreaseAndCompare(i,0) & incrementAndCompare(i, 2)) {
                 System.out.print("4");
-            } else if (decreaseAndCompare(???, i) ??? incrementAndCompare(???, i) ??? compare(???, i)) {
-                System.out.print("8");
-            }
+            } else if (decreaseAndCompare(3, i) || incrementAndCompare(2, i) | compare(3, i)) {
+               System.out.print("8");
+           }
         }
 
     }
