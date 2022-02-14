@@ -2,7 +2,7 @@ package lesson_2.homework;
 
 public class Tasks {
     public static void main(String[] args) {
-        task_2();
+        task_3();
     }
 
     /**
@@ -29,27 +29,31 @@ public class Tasks {
     public static void task_2() {
         String[] strs = new String[]{"one", "two", "three", "four"};
         for (String str : strs) {
+            switch (str) {
+                case "one":
+                    System.out.print(1);
+                    break;
+                case "two":
+                    System.out.print(2);
+                    break;
+                case "three":
+                    System.out.print(3);
+                    break;
+                default:
+                    System.out.print(5);
+            }
             switch (str.indexOf("o")) {
                 case 0:
-                    System.out.print(122);
+                    System.out.print(2);
                     break;
                 case 1:
-                    System.out.print(3);
+                    System.out.print(5);
                     break;
                 case 2:
                     System.out.print(10);
 
             }
-            switch (str) {
-                case "one":
-                    System.out.print(1);
-                case "two":
-                    System.out.print(2);
-                case "three":
-                    System.out.print(3);
-                default:
-                    System.out.print(5);
-            }
+
         }
     }
 
@@ -61,11 +65,11 @@ public class Tasks {
      */
     public static void task_3() {
         for (int i = 0; i < 4; i++) {
-//            if (compare(i, ???) ??? decreaseAndCompare(i, ???) ??? incrementAndCompare(i, ???)) {
-//                System.out.print("4");
-//            } else if (decreaseAndCompare(???, i) ??? incrementAndCompare(???, i) ??? compare(???, i)) {
-//                System.out.print("8");
-//            }
+            if (compare(i, ???) ??? decreaseAndCompare(i, ???) ??? incrementAndCompare(i, ???)) {
+                System.out.print("4");
+            } else if (decreaseAndCompare(???, i) ??? incrementAndCompare(???, i) ??? compare(???, i)) {
+                System.out.print("8");
+            }
         }
 
     }
