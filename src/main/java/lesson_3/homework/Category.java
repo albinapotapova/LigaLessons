@@ -4,29 +4,21 @@ public abstract class Category {
     protected String iconDescription;
     protected String name;
 
-    protected String getIconDescription() {
+    public String getIconDescription() {
         return iconDescription;
     }
 
     public void setIconDescription (String iconDescription) {
-        this.name = iconDescription;
+        this.iconDescription = iconDescription;
     }
 
-    protected String getName() {
-        return name;
-    }
+    public String getName() { return name;}
 
     public void setName (String name) {
         this.name = name;
     }
 
-    public void print() {
-        System.out.println(name);
-    }
 
-//    protected String SmartPhonesWatches;
-//    protected String TVs;
-//    protected String LaptopTablets;
 //    protected String Computers;
 //    protected String HeadPhonesAudioEquipment;
 //    protected String GamesConsole;
